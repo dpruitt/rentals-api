@@ -13,6 +13,7 @@ gem "sqlite3", "~> 1.4"
 gem "puma", "~> 5.0"
 
 gem 'active_model_serializers', '~> 0.10.13'
+gem 'rack-cors'
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
