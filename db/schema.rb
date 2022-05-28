@@ -13,8 +13,14 @@
 ActiveRecord::Schema[7.0].define(version: 2022_05_28_214541) do
   create_table "rentals", force: :cascade do |t|
     t.string "title"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string "owner"
+    t.string "city"
+    t.decimal "lat", precision: 10, scale: 4
+    t.decimal "lng", precision: 10, scale: 4
+    t.string "category"
+    t.integer "bedrooms"
+    t.string "image"
+    t.string "description"
   end
 
 end
