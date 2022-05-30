@@ -1,7 +1,3 @@
 class RentalSerializer < ActiveModel::Serializer
-  attributes :id, :title, :owner, :city, :location, :category, :bedrooms, :image, :description
-
-  def location
-    { lat: object.lat, lng: object.lng }
-  end
+  attributes :id, :title, :owner, :city, :lat, :lng, :category, :bedrooms, :image, :description
 end
